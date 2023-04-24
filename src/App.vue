@@ -1,5 +1,6 @@
 <template>
   <NavBar />
+  <!-- <div class="container-fluid min-vh-100 p-0"></div> -->
   <router-view />
   <Footer/>
 </template>

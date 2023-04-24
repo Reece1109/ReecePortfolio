@@ -1,15 +1,12 @@
 <template>
   <div class="about-page text-center pe-2">
-    <h1 class="display-5 fw-bold mb-5"> About Me</h1> 
-    <div class="row">
-      <figure class="col-6">
-        <img class="profile-pic" src="https://i.postimg.cc/436n23kr/fb-img-1667475337493.jpg" alt="Profile Picture">
+    <h1 class="display-3 my-3 text-white"> About</h1> 
+    <div class="container row">
+      <figure class="col-lg-6 mb-3 mb-lg-0">
+        <img class="profile-pic img-fluid rounded" src="https://i.postimg.cc/wxPMqspv/DSC-3510.jpg" alt="Profile Picture">
       </figure>
-      <div class="col-6">
-        <p class="lead">My name is Reece Simon and I am a open-minded, goal driven and an aspiring Developer.
-          I am always looking for new opportunities to grow and acquire new skills and tools. 
-          I see myself as a asset to any workspace because of my work ethic, perseverance and drive for success .
-          I am really interested in the Cyber Security part of coding. As I am all about safeguarding and protecting privileged information and theft.</p>
+      <div class="col-lg-6">
+        <p>My name is Reece Simon. As a proactive and ambitious individual, I am deeply passionate about the exciting and constantly evolving field of software development. I am always seeking out new opportunities to learn and grow, and I believe that my growth mindset is one of my strongest assets. Throughout my career, I have worked tirelessly to cultivate a robust set of professional qualities that make me a valuable addition to any team. These qualities include a strong work ethic, a deep sense of perseverance, and an unwavering drive for success. I believe that these traits are essential to achieving success in any field, and I am committed to leveraging them to achieve my goals. Overall, I am deeply committed to my work and to my ongoing development as a software developer. I believe that my passion, my drive, and my commitment to excellence make me a valuable asset to any team, and I am excited to continue exploring new opportunities to grow and thrive in this exciting field.</p>
       </div>
     </div>
   </div>
@@ -23,12 +20,15 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap');
+  
 .about-page{
-color: #a7bcb9;
+color: #ffffff;
 min-height: 100vh;
 background-image:
-linear-gradient(#000000da,#000000be),
-url('../assets/bfa2d1954f88e09c418f8c40161162f8.jpg');
+  linear-gradient(#000000da, #000000b7),
+  url('../assets/pexels-abhilash-sahoo-4295841.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: bottom;
@@ -37,12 +37,22 @@ display: flex;
 flex-flow: column nowrap;
 justify-content: center;
 align-items: center;
+font-family: 'Ysabeau', sans-serif;
+}
+
+h1{
+  font-family: 'Lilita One', cursive;
 }
 .profile-pic{
-max-width: 300px; 
-border-radius: 1rem; 
+width: 380px; 
 }
 p{
-  font-weight: 300;
+  font-family: 'Lilita One', cursive;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 800px;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 </style>

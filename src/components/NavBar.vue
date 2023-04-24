@@ -1,115 +1,122 @@
 <template>
-  <!-- Nav-Bar -->
-    <nav class="navbar navbar-dark navigation-bar d-flex align-items-center justify-content-end w-100">
-        <button
-          class="navbar-toggler mb-4 me-4"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <router-link to="/">Home</router-link>
-              <router-link to="/about">About</router-link>
-              <router-link to="/resume">Resume</router-link>
-              <!-- <router-link to="/projects">Projects</router-link> -->
-              <router-link to="/testimonial">Testimonials</router-link>
-              <router-link to="/contact"> Contact </router-link>
-            </ul>
-          </div>
-        </div>
-  
-    </nav>
-  
-  <div class="hello"></div>
+  <div>
+    <div class="toggle" @click="toggleMenu">
+      <a><i class="fa-solid fa-bars fa-2x" style="color: #ffffff;"></i></a>
+    </div>
+    <div class="logo">
+      <img src="https://i.postimg.cc/PfP9nnyt/Ruan-Sousa-simple-logo-that-contains-the-letters-R-and-S-5935e7f3-2078-4280-ae7e-e1e6565e3fb9.png" alt="Logo">
+    </div>
+    <div class="menu" :class="{ active: isMenuActive }">
+      <ul>
+        <li><router-link to="/" @click="hideMenu">Home</router-link></li>
+        <li><router-link to="/about" @click="hideMenu">About</router-link></li>
+        <li><router-link to="/resume" @click="hideMenu">Resume</router-link></li>
+        <li><router-link to="/projects" @click="hideMenu">Projects</router-link></li>
+        <li><router-link to="/testimonial" @click="hideMenu">Testimonials</router-link></li>
+        <li><router-link to="/contact" @click="hideMenu">Contact</router-link></li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "HomeView",
-  props: {
-    msg: String,
+  data() {
+    return {
+      isMenuActive: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuActive = !this.isMenuActive;
+    },
+    hideMenu() {
+      this.isMenuActive = false;
+    },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
-.navigation-bar {
-  height: 10vh;
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFC85;
+}
+
+.toggle {
   position: fixed;
-  z-index: 10;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  margin-top: 3rem;
-  list-style-type: none;
-  width: 100%;
-}
-li {
-  display: inline-block;
+  top: 40px;
+  right: 40px;
+  z-index: 2;
 }
 
-
-
-.first-color { 
-	background: #5dacbd; 
-}
-	
-.second-color { 
-	background: #24527a; 
-}
-
-.third-color { 
-	background: #a7bcb9; 
-}
-
-
-a {
-  color: #bbb8b8;
-  font-size: 25px;
-  font-weight: 800;
+.toggle a {
   text-decoration: none;
-  padding-left: 2rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-}
-
-a:hover {
-  background: #bbb8b8;
-  color: #383838;
-  font-size: 25px;
-}
-
-a:active{
-  color: #fff;
-  font-size: 25px;
+  color: #262626;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .logo {
-  font-family: 'Londrina Shadow', cursive;
+  position: fixed;
+  top: 20px;
+  right: auto;
+  left: 80px; /* adjust as needed */
+  z-index: 2;
+}
+
+.logo img {
+  height: 70px; /* adjust as needed */
+  border-radius: 16px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  padding: 10px;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Lilita One', cursive;
+}
+
+ul li a:hover {
+  color: #505050;
+}
+
+.menu.active {
+  left: 0;
+  overflow: auto;
 }
 </style>
