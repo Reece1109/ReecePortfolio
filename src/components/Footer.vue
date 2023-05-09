@@ -10,7 +10,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
   footer {
-    background-color: rgba(25, 24, 24, 0.682);
+    background-color: black;
     color: #fff;
     position: relative;
     bottom: 0;

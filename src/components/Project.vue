@@ -46,7 +46,7 @@ export default {
           hosting: "https://to-do-list-2023rs.netlify.app/"
         },
         {
-          title: 'Sushi Resturant',
+          title: 'Sushi Restaurant',
           image: 'https://i.postimg.cc/0j25cgmK/sushi.png',
           gitHub: "https://github.com/Reece1109/Full-Stack-Project",
           hosting: "https://sushi-store-6d4e3.web.app/"
