@@ -37,12 +37,12 @@ export default {
         {
           title: 'Maxwill-Isaacs',
           image: 'https://i.postimg.cc/9FRNDGp0/DSC-3588.jpg',
-          text: 'Reece shows great leadership skills. Always thinks on his feet and a quick learner. Very eager to learn something new and not afraid to explore outside his comfort zone. Very charasmatic and also confident in the work that he presents.',
+          text: 'Reece shows great leadership skills. Always thinks on his feet and a quick learner. Very eager to learn something new and not afraid to explore outside his comfort zone. Very charismatic and also confident in the work that he presents.',
         },
         {
             title: "Joel",
             image: "https://i.postimg.cc/tgQcHW9W/Joel-Mukanya-pxsjvq7tothncxrrxmd0dmxnbvis2x953vjs3gt7gm.jpg",
-            text: "Reece is a very creative, and well-behaved student. He does enjoy working with his classmates and works well on his project. He has gained a-lot of knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired."
+            text: "Reece is a very creative, and well-behaved student. He does enjoy working with his classmates and works well on his                project. He has gained a-lot of knowledge of web development."
           },
           {
             title: "Mkhuseli Mkeyiya",
