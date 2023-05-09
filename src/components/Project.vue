@@ -10,7 +10,7 @@
           <div class="card-body mt-4">
             <h5 class="card-title">{{ project.title }}</h5>
             <a :href="project.gitHub" target="_blank" class="p-1 m-auto">GitHub</a>
-            <a :href="project.netlify" target="_blank" class="p-1 m-auto">Netlify</a>
+            <a :href="project.hosting" target="_blank" class="p-1 m-auto">Hosting</a>
           </div>
         </div>
       </div>
@@ -36,40 +36,40 @@ export default {
         {
           title: 'Portfolio',
           image: 'https://i.postimg.cc/BnBckH1W/portfolio.png',
-          gitHub: 'https://github.com/Reece1109/Reece-sPortfolio.git',
-          netlify: 'https://dashing-bublanina-080d8c.netlify.app'
+          gitHub: 'https://github.com/Reece1109/ReecePortfolio',
+          hosting: ''
         },
         {
-          title: 'Ecommerce Website',
-          image: 'https://i.postimg.cc/J7H0G8xt/online-shop.png',
-          github: "https://github.com/Reece1109/EcommerceWebsite.git",
-          netlify: "https://iridescent-bunny-c9b063.netlify.app"
+          title: 'To-Do List',
+          image: 'https://i.postimg.cc/qqq3Xg00/clipboard.png',
+          gitHub: "https://github.com/Reece1109/To-Do-List",
+          hosting: "https://to-do-list-2023rs.netlify.app/"
         },
         {
           title: 'Sushi Resturant',
           image: 'https://i.postimg.cc/0j25cgmK/sushi.png',
-          github: "",
-          netlify: ""
+          gitHub: "",
+          hosting: "https://sushi-store-6d4e3.web.app/"
+        },
+        {
+          title: 'Watch Ecommerce Website',
+          image: 'https://i.postimg.cc/65g5CF2D/wristwatch.png',
+          hosting: "https://dev-timeless-elegance.pantheonsite.io/"
+        },
+        {
+          title: 'AirBnb Website',
+          image: 'https://i.postimg.cc/FK2XYYhK/house.png',
+          gitHub: "",
+          hosting: ""
         },
         {
           title: 'BMI Calculator',
-          image: 'https://i.postimg.cc/136Hybnq/body-mass-index.png',
-          github: "",
-          netlify: ""
-        },
-        {
-          title: 'AirBnb Webite',
-          image: 'https://i.postimg.cc/FK2XYYhK/house.png',
-          github: "",
-          netlify: ""
-        },
-        {
-          title: 'Calculator',
-          image: 'https://i.postimg.cc/WzyHHKt1/calculator.png',
-          github: "",
-          netlify: ""
+          image: 'https://i.postimg.cc/XvdBQw9V/bmi.png',
+          gitHub: "https://github.com/Reece1109/BMI-Calculator",
+          hosting: "https://bmicalculator-2023.netlify.app/"
         },
       ],
+      
     }
   }
 }
