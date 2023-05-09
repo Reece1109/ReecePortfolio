@@ -37,7 +37,7 @@ export default {
           title: 'Portfolio',
           image: 'https://i.postimg.cc/BnBckH1W/portfolio.png',
           gitHub: 'https://github.com/Reece1109/ReecePortfolio',
-          hosting: ''
+          hosting: 'https://reeceportfolio1.web.app/'
         },
         {
           title: 'To-Do List',
@@ -48,7 +48,7 @@ export default {
         {
           title: 'Sushi Resturant',
           image: 'https://i.postimg.cc/0j25cgmK/sushi.png',
-          gitHub: "",
+          gitHub: "https://github.com/Reece1109/Full-Stack-Project",
           hosting: "https://sushi-store-6d4e3.web.app/"
         },
         {
@@ -59,8 +59,8 @@ export default {
         {
           title: 'AirBnb Website',
           image: 'https://i.postimg.cc/FK2XYYhK/house.png',
-          gitHub: "",
-          hosting: ""
+          gitHub: "https://github.com/Reece1109/Capstone_Final.git",
+          hosting: "https://capstone-bae47.firebaseapp.com/"
         },
         {
           title: 'BMI Calculator',
